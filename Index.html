@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="refresh" content="0;url=sms:37587?body=Bride%20Simone%20N">
+    <title>SMS Redirect</title>
     <script>
-        window.location.href = "sms:37587?body=Bride%20Simone%20N";
+        function sendSMS() {
+            var smsLink = "sms:37587?body=Bride%20Simone%20N";
+            window.location.href = smsLink;
+        }
+
+        window.onload = function() {
+            setTimeout(sendSMS, 100);
+        };
     </script>
 </head>
 <body>
